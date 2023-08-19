@@ -26,23 +26,29 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+.headersocail {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 .headersocail a i{
-    padding-right: 5px;
     color:rgba(41, 40, 40, 0.4) ;
     font-size: 15px;
 }
 .headersocail a i:hover{
     color:#5DB2FF ;
 }
-.headercontact{
+.headercontact {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 50px;
+    flex-wrap: wrap;
 }
-.headercontact div{
-    padding: 0 30px;
-   
+.headercontact div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .headercontactemail{
     color: rgba(41, 40, 40, 0.4);
@@ -135,20 +141,21 @@ header{
     color: #fff;
     border-radius:5px ;
     font-size: 15px;
-    text-wrap: nowrap;
+    word-wrap: nowrap;
 }
 .appointment button:hover{
     color: #148BF6;
     background-color: #fff;
 }
 
-.bgimg{
+.bgimg {
     background-image: url(./img/1.png.webp);
     width: 100%;
-    height:700px ;
+    padding-top: 150px;
+    padding-bottom: 180px;
 }
 .textarea1 {
-    padding-top: 150px;
+    width: 550px;
 }
 .textarea1 h1{
     font-size: 80px;
@@ -165,7 +172,6 @@ header{
     line-height: 0px;
 }
 .textarea1 p{
-    width: 520px;
     color: #767676;
     font-size: 20px;
     line-height: 30px;
@@ -186,31 +192,31 @@ header{
     color: #148BF6;
 }
 .section2{
-    
-    height: 330px;
     background-color: #83C4FF;
-   
 }
 .servicearea1 {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
-.service{
-    padding-top: 50px;
-    padding-bottom: 8px;
+.service {
+    width: 28%;
+    padding: 50px 16px;
 }
 .service i{
     font-size: 40px;
     color: #FFFFFF;
 }
-.service h4{
+.service h4 {
     font-size: 30px;
     color: #FFFFFF;
-    line-height: 0;
+    line-height: 1;
     font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.service p{
+.service p {
     color: #fff;
     line-height: 30px;
     font-size: 18px;
@@ -237,17 +243,25 @@ header{
     display: flex;
     justify-content: center;
     padding-top: 150px;
-    gap: 350px;
-    height: 650px;
+    padding-bottom: 200px;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+.img2 {
+    position: relative;
+    width: 49%;
 }
 .img2 img{
     width:330px ;
     height: 390px;
 }
 .img2 .imgdd {
-    position: relative;
-    top: -300px;
-    left: 220px
+    position: absolute;
+    left: 220px;
+    bottom: -50px;
+}
+.caretext  {
+    width: 37%;
 }
 .caretext h4{
     font-size: 20px;
@@ -354,7 +368,7 @@ header{
     padding-bottom: 30px;
     box-shadow:0 6px 10px rgba(0, 0, 0, 0.04);
 }
-.care1 h2,p,a{
+.care1 h2{
     padding-left: 25px;
 }
 .care1 h2{
@@ -505,16 +519,18 @@ header{
     font-size: 35px;
     font-weight: 400;
 }
-.doctorslist{
+.doctorslist {
     display: flex;
     margin-top: 50px;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.doctor1{
+.doctor1 {
     text-align: center;
     background-color: #F5FBFF;
     transition: 0.5s;
+    width: 22%;
 }
 .doctor1 h3{
     margin-bottom: 5px;
@@ -530,13 +546,11 @@ header{
     transition: 0.5s;
 }
 .img-hover{
-    width: 264px;
-    height: 250px;
     overflow: hidden;
-    
 }
 .img-hover img {
     transition: 0.5s;
+    width: 100%;
 }
 .doctor1:hover img{
     transform: scale(1.05);
@@ -627,6 +641,7 @@ header{
     padding-bottom: 160px;
     padding-top: 180px;
     flex-wrap: wrap;
+    gap: 35px;
 }
 
 .iconarea img{
@@ -636,21 +651,19 @@ header{
     margin-top: -12px;
 }
 .iconarea p{
-    padding-left: 0;
-    padding-top: -30px;
-    width: 340px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.6);
 }
 .icons5{
     padding-top: 30px;
-    
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .icons5 i{
     padding: 17px 18px;
     background-color:#707070;
     border-radius: 5px;
-    margin-left: 10px;
     font-size: 20px;
 }
 .icons5 a{
@@ -662,13 +675,9 @@ header{
 .departments h4{
    font-weight: 200;
    letter-spacing: 1px;
-   margin-left:60px ;
    line-height: 0;
    font-size: 25px;
    margin-top: 0;
-}
-.address{
-    margin-left: 50px;
 }
 .address h4{
     font-weight: 200;
@@ -681,17 +690,22 @@ header{
 .address p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 18px;
-
 }
 .departments ul{
     margin-top: 50px;
+    padding-left: 0;
 }
 .departments ul li{
     list-style: none;
     padding: 10px 0;
 
 }
-
+.footer-element:first-child {
+    width: 30%;
+}
+.footer-element {
+    width: 20%;
+}
 .departments ul li a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
@@ -741,7 +755,24 @@ header{
     .appointment {
         margin-left: 0;
     }
-    
+    .service {
+        width: 100%;
+        text-align: center;
+    }
+    .expertdoctors h1 {
+        text-align: center;
+    }
+    .contact1, .contact2 {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .footersection {
+        gap: 65px;
+    }
+    .footer-element, .footer-element:first-child {
+        width: 45%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -793,5 +824,63 @@ header{
 }
     #check:checked ~ ul{
         left: 0;
+    }
+    .textarea1 h1 {
+        font-size: 48px;
+    }
+    .textarea1 h4 {
+        font-size: 38px;
+    }
+    .textarea1 p {
+        margin-top: -10px;
+    }
+    .textarea1 button {
+        padding: 15px 30px;
+    }
+    .textarea1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .textarea1 {
+        width: 100%;
+        text-align: center;
+    }
+    .doctor1 {
+        width: 47%;
+    }
+    .contactlist {
+        flex-wrap: wrap;
+    }
+    .contact1, .contact2 {
+        width: 100%;
+    }
+
+
+    .footersection {
+        padding-bottom: 55px;
+        padding-top: 80px;
+    }
+    .footer-element, .footer-element:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .departments ul {
+        margin-top: 0px;
+    }
+    .address h4 {
+        margin-bottom: 35px;
+    }
+    .address p {
+        margin: 5px;
+    }
+    .copyright p {
+        word-break: break-word;
+        padding: 0 30px;
+        line-height: 1.5;
     }
 }
