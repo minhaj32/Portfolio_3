@@ -6,8 +6,6 @@ body{
 }
 .container {
     width: 1110px;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 0 auto;
 }
 header{
@@ -425,34 +423,29 @@ header{
 .icon2{
    display: flex;
    justify-content: space-between;
-
+   align-items: center;
+   position: relative;
+   top: 80px;
 }
+
 .icon2 span{
     font-size: 40px;
     color: #fff;
-}
+} 
 .icon2 span:hover{
     background-color: #fff;
     color: black;
 }
-.icon2 .iconmm{
-    position: relative;
-    top: 150px;
-    left: 350px;
-}
-.icon2 .iconmn{
-    position: relative;
-    top: 150px;
-    right:350px ;
-}
+
 .text6{
     text-align: center;
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
     font-size: 20px;
     color: #1F1F1F;
     padding-top: 50px;
     color: #fff;
+    padding-left: 100px;
 }
 .text6 h5{
     margin-top: 70px;
@@ -464,10 +457,9 @@ header{
     width: 70px;
     height: 2px;
     background-color: rgb(228, 219, 219);
-    top: -30px;
-    left: 360px;
+    top: 30px;
+    left: 48%;
 }
-
 .mainheading{
     background-color: #F5FBFF;
     
@@ -477,8 +469,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    width: 100%;
+    flex-wrap: wrap;
 }
+
 .mainheading ul li{
     list-style: none;
     padding: 30px 80px;
@@ -490,6 +484,8 @@ header{
     margin-top: 70px;
     position: relative;
     padding-bottom: 250px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 .mainconten1::before {
     content: "";
@@ -498,6 +494,9 @@ header{
     height: 2px;
     background-color: #e9e6e6;
     top: 380px;
+}
+.textarea7{
+    width: 45%;
 }
 .textarea7 span{
    font-size: 70px;
@@ -510,9 +509,11 @@ header{
    line-height: 25px;
    color: rgba(0, 0, 0, 0.6);
 }
+.imgsection{
+    width:45% ;
+}
 .imgsection img{
-    width: 540px;
-    height: 319px;
+    width: 100%;
 }
 .expertdoctors{
     padding-bottom: 120px;
@@ -796,6 +797,9 @@ header{
     .footer-element, .footer-element:first-child {
         width: 45%;
     }
+    .mainconten1::before{
+        top: 570px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -906,5 +910,23 @@ header{
         word-break: break-word;
         padding: 0 30px;
         line-height: 1.5;
+    }
+    .icon2{
+        top: 110px;
+    }
+    .text6{
+        padding-left: 0;
+    }
+    .text6 h5::before {
+        left: 44%;
+    }
+    .textarea7{
+        width: 100%;
+    }
+    .imgsection {
+        width: 70%;
+    }
+    .headingpad h1::before{
+        left: 300px;
     }
 }
