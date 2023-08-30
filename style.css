@@ -147,20 +147,21 @@ header{
     color: #148BF6;
     background-color: #fff;
 }
-
-.bgimg {
+.section1 {
     background-image: url(./img/1.png.webp);
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 150px;
     padding-bottom: 180px;
 }
+
 .textarea1 {
-    width: 550px;
+    width: 50%;
+    margin: 0;
 }
 .textarea1 h1{
     font-size: 80px;
-   line-height: 0px;
-   
+    margin: 0;
 }
 
 .textarea1 h4{
@@ -169,13 +170,12 @@ header{
     font-family: "Poppins", sans-serif;
     letter-spacing: 2px;
     font-weight: normal;
-    line-height: 0px;
+    margin: 30px 0;
 }
 .textarea1 p{
     color: #767676;
     font-size: 20px;
     line-height: 30px;
-    margin-top: -40px;
 }
 .textarea1 button{
     padding: 20px 45px;
@@ -348,7 +348,7 @@ header{
     background-color: #5DB2FF;
     position: absolute;
     bottom: -15px;
-    left: 535px;
+    left: 50%;
 }
 .headingpad p{
     width: 100%;
@@ -474,6 +474,7 @@ header{
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .mainheading ul li{
@@ -486,7 +487,7 @@ header{
     align-items: center;
     margin-top: 70px;
     position: relative;
-    padding-bottom: 250px;
+    padding-bottom: 150px;
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -496,7 +497,7 @@ header{
     width: 100%;
     height: 2px;
     background-color: #e9e6e6;
-    top: 380px;
+    bottom: 0;
 }
 .textarea7{
     width: 45%;
@@ -519,6 +520,7 @@ header{
     width: 100%;
 }
 .expertdoctors{
+    padding-top: 50px;
     padding-bottom: 120px;
 }
 .expertdoctors h1{
@@ -749,6 +751,9 @@ header{
     .headerarea1 .header {
         justify-content: space-between;
     }
+    .logo{
+        padding-top: 20px;
+    }
     .doctorslist {
         justify-content: center;
     }
@@ -793,6 +798,7 @@ header{
     }
     .caretext, .img2 {
         width: 100%;
+        text-align: start;
     }
     .footersection {
         gap: 65px;
@@ -800,9 +806,16 @@ header{
     .footer-element, .footer-element:first-child {
         width: 45%;
     }
-    .mainconten1::before{
-        top: 570px;
+
+    .main2{
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
+    .img2 .imgdd{
+        position: initial;
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -930,16 +943,10 @@ header{
     .imgsection {
         width: 100%;
     }
-    .headingpad h1::before{
-        left: 300px;
-    }
     .care{
-        gap: 20px;
+        gap: 40px;
     }
-    .mainconten1::before{
-        top: 750px;
-    }
-    
+
 }
 
 /* Smail Deavie Responvie */
